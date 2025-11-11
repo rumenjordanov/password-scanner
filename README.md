@@ -11,7 +11,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python3 password_scanner.py ./testdata --config config.yml
-'''
+```
 
 <p align="center">
   <img src="assets/demo.gif" alt="Password Scanner demo">
