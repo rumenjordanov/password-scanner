@@ -1,0 +1,22 @@
+Project Falcon - Weekly Meeting Summary
+
+Date: Nov 11, 2025
+
+Attendees -  John, Sarah, Mike (remote)
+
+Decisions:
+
+Approved the new design mockups for the landing page.
+
+John will handle the backend database migration by Friday.
+
+Need to follow up with the legal department on the compliance issue.
+
+
+
+IMPORTANT: The temporary uthentication key for the external client portal is "BetaClientAuth-X7Y9Z". 
+change it after using it
+
+
+
+

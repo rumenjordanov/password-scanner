@@ -1,0 +1,110 @@
+[
+  {
+    "pattern": "Password_Assignment",
+    "match": "Pass for google = Pass123456",
+    "file": "/home/ry/password-scanner/testdata/topsecret.pdf",
+    "start": 0,
+    "end": 28,
+    "snippet": "Pass for google = Pass123456 Passwd for gmail = admin111 ",
+    "score": 8
+  },
+  {
+    "pattern": "JWT",
+    "match": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.fake.payload",
+    "file": "/home/ry/password-scanner/testdata/test3.json",
+    "start": 12,
+    "end": 61,
+    "snippet": "{ \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.fake.payload\" } ",
+    "score": 7
+  },
+  {
+    "pattern": "Key_In_Quotes",
+    "match": "\"BetaClientAuth-X7Y9Z\"",
+    "file": "/home/ry/password-scanner/testdata/meetingplan.txt",
+    "start": 368,
+    "end": 390,
+    "snippet": "n key for the external client portal is \"BetaClientAuth-X7Y9Z\". change it after using it ",
+    "score": 1
+  },
+  {
+    "pattern": "Generic_Key_Like",
+    "match": "BetaClientAuth-X7Y9Z",
+    "file": "/home/ry/password-scanner/testdata/meetingplan.txt",
+    "start": 369,
+    "end": 389,
+    "snippet": " key for the external client portal is \"BetaClientAuth-X7Y9Z\". change it after using it ",
+    "score": 1
+  },
+  {
+    "pattern": "Auth_Key_Context",
+    "match": "passkey: ProjectOmega-2025!",
+    "file": "/home/ry/password-scanner/testdata/testlongtext.txt",
+    "start": 332,
+    "end": 359,
+    "snippet": "tion - DO NOT LOSE THIS The main system passkey: ProjectOmega-2025! ",
+    "score": 1
+  },
+  {
+    "pattern": "Generic_Key_Like",
+    "match": "ProjectOmega-2025",
+    "file": "/home/ry/password-scanner/testdata/testlongtext.txt",
+    "start": 341,
+    "end": 358,
+    "snippet": " NOT LOSE THIS The main system passkey: ProjectOmega-2025! ",
+    "score": 1
+  },
+  {
+    "pattern": "Generic_Key_Like",
+    "match": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+    "file": "/home/ry/password-scanner/testdata/test3.json",
+    "start": 12,
+    "end": 48,
+    "snippet": "{ \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.fake.payload\" } ",
+    "score": 1
+  },
+  {
+    "pattern": "Generic_Key_Like",
+    "match": "db_password",
+    "file": "/home/ry/password-scanner/testdata/test1.txt",
+    "start": 0,
+    "end": 11,
+    "snippet": "db_password = MySecr3tPwd123 ",
+    "score": 1
+  },
+  {
+    "pattern": "Generic_Key_Like",
+    "match": "MySecr3tPwd123",
+    "file": "/home/ry/password-scanner/testdata/test1.txt",
+    "start": 14,
+    "end": 28,
+    "snippet": "db_password = MySecr3tPwd123 ",
+    "score": 1
+  },
+  {
+    "pattern": "Generic_Key_Like",
+    "match": "AKIA1234567890ABCDE",
+    "file": "/home/ry/password-scanner/testdata/test2.txt",
+    "start": 8,
+    "end": 27,
+    "snippet": "aws_key=AKIA1234567890ABCDE ",
+    "score": 1
+  },
+  {
+    "pattern": "Generic_Key_Like",
+    "match": "Pass123456",
+    "file": "/home/ry/password-scanner/testdata/topsecret.pdf",
+    "start": 18,
+    "end": 28,
+    "snippet": "Pass for google = Pass123456 Passwd for gmail = admin111 ",
+    "score": 1
+  },
+  {
+    "pattern": "Generic_Key_Like",
+    "match": "admin111",
+    "file": "/home/ry/password-scanner/testdata/topsecret.pdf",
+    "start": 48,
+    "end": 56,
+    "snippet": " google = Pass123456 Passwd for gmail = admin111 ",
+    "score": 1
+  }
+]

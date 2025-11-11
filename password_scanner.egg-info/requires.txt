@@ -1,0 +1,6 @@
+pyyaml
+pdfminer.six
+python-docx
+pillow
+pytesseract
+python-magic

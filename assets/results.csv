@@ -1,0 +1,13 @@
+score,pattern,match,file,start,end,snippet
+8,Password_Assignment,Pass for google = Pass123456,/home/ry/password-scanner/testdata/topsecret.pdf,0,28,Pass for google = Pass123456 Passwd for gmail = admin111 
+7,JWT,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.fake.payload,/home/ry/password-scanner/testdata/test3.json,12,61,"{ ""token"": ""eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.fake.payload"" } "
+1,Key_In_Quotes,"""BetaClientAuth-X7Y9Z""",/home/ry/password-scanner/testdata/meetingplan.txt,368,390,"n key for the external client portal is ""BetaClientAuth-X7Y9Z"". change it after using it "
+1,Generic_Key_Like,BetaClientAuth-X7Y9Z,/home/ry/password-scanner/testdata/meetingplan.txt,369,389," key for the external client portal is ""BetaClientAuth-X7Y9Z"". change it after using it "
+1,Auth_Key_Context,passkey: ProjectOmega-2025!,/home/ry/password-scanner/testdata/testlongtext.txt,332,359,tion - DO NOT LOSE THIS The main system passkey: ProjectOmega-2025! 
+1,Generic_Key_Like,ProjectOmega-2025,/home/ry/password-scanner/testdata/testlongtext.txt,341,358, NOT LOSE THIS The main system passkey: ProjectOmega-2025! 
+1,Generic_Key_Like,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9,/home/ry/password-scanner/testdata/test3.json,12,48,"{ ""token"": ""eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.fake.payload"" } "
+1,Generic_Key_Like,db_password,/home/ry/password-scanner/testdata/test1.txt,0,11,db_password = MySecr3tPwd123 
+1,Generic_Key_Like,MySecr3tPwd123,/home/ry/password-scanner/testdata/test1.txt,14,28,db_password = MySecr3tPwd123 
+1,Generic_Key_Like,AKIA1234567890ABCDE,/home/ry/password-scanner/testdata/test2.txt,8,27,aws_key=AKIA1234567890ABCDE 
+1,Generic_Key_Like,Pass123456,/home/ry/password-scanner/testdata/topsecret.pdf,18,28,Pass for google = Pass123456 Passwd for gmail = admin111 
+1,Generic_Key_Like,admin111,/home/ry/password-scanner/testdata/topsecret.pdf,48,56, google = Pass123456 Passwd for gmail = admin111 

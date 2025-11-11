@@ -1,0 +1,63 @@
+scan:
+
+  depth: 3
+
+  threads: 4
+
+  max_file_size_bytes: 5000000
+
+  exclude_dirs: [".git", "node_modules", "venv", "__pycache__"]
+
+  text_extensions: [".txt", ".cfg", ".conf", ".ini", ".json", ".yaml", ".yml", ".env", ".py", ".sh", ".md", ".log", ".docx", ".pdf"]
+
+  enable_ocr_for_pdf: false
+
+
+
+patterns:
+
+  AWS_AccessKey: "AKIA[0-9A-Z]{16}"
+  JWT: "eyJ[a-zA-Z0-9\\-_]+\\.[a-zA-Z0-9\\-_]+\\.[a-zA-Z0-9\\-_]+"
+  Password_Assignment: "(?i)\\bpass(?:word)?\\b[\\s\\S]{0,50}?[=:]\\s*['\\\"]?([^\\s'\\\"]{4,128})"
+  Auth_Key_Context: "(?i)\\b(?:authentication key|authentication token|auth key|auth token|secure access code|access code|secure token|secure key|passkey|pass key)\\b[\\s\\S]{0,60}?[=:]\\s*['\\\"]?([A-Za-z0-9\\-\\_!]{4,128})"
+  Key_In_Quotes: "\"([A-Za-z0-9\\-\\_!]{6,128})\""
+  Generic_Key_Like: "(?<![A-Za-z0-9])(?=[A-Za-z0-9_-]*[0-9_-])[A-Za-z0-9_-]{8,64}(?![A-Za-z0-9])"
+
+
+ 
+pattern_settings:
+  Generic_Key_Like:
+    exclude_extensions: [".txt", ".md"]
+
+    
+   
+
+
+
+output:
+
+  csv: results.csv
+
+  json: results.json
+
+  show_snippet_length: 120
+
+
+
+safety:
+
+  require_consent: True
+
+severity_map:
+
+  AWS_AccessKey: 9
+  
+  JWT: 7
+    
+  Generic_API_Key: 6
+      
+  Password_Assignment: 8
+        
+  Pass_Generic: 6
+          
+          

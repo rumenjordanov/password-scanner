@@ -1,0 +1,9 @@
+password_scanner.py
+pyproject.toml
+setup.cfg
+password_scanner.egg-info/PKG-INFO
+password_scanner.egg-info/SOURCES.txt
+password_scanner.egg-info/dependency_links.txt
+password_scanner.egg-info/entry_points.txt
+password_scanner.egg-info/requires.txt
+password_scanner.egg-info/top_level.txt
