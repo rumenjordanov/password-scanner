@@ -13,3 +13,4 @@ pip install -r requirements.txt
 python3 password_scanner.py ./testdata --config config.yml
 
 
+![Demo](assets/demo.gif)
